@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img id="bg" src="bg.svg" alt="">
+    <div class="menu">
+        <a href="/" class="logo">
+            <img src="planet.svg" alt="">
+            <h5>Планета!</h5>
+        </a>
+        <nav>
+            <a href="#plants">
+                <img src="plant.svg" alt="">
+            </a>
+            <a href="#news">
+                <img src="news.svg" alt="">
+            </a>
+            <a href="#recycle">
+                <img src="recycle.svg" alt="">
+            </a>
+        </nav>
+    </div>
+    <main>
+        <h1>Планета!</h1>
+        <div class="sectionTitle">
+            <h3>А что такое растения?:)</h3>
+            <img src="plant.svg" alt="">
+        </div>
+        <div id="plants">
+            <div class="plant">
+                <h2>Растения - это...</h2>
+                <h2>Дыхание</h2>
+            </div>
+            <div class="plant">
+                <h2>Растения - это...</h2>
+                <h2>Изящность</h2>
+            </div>
+            <div class="plant">
+                <h2>Растения - это...</h2>
+                <h2>Жизнь</h2>
+            </div>
+        </div>
+        <div class="sectionTitle">
+            <h3>Как мы узнаем об экологических вопросах?</h3>
+            <img src="news.svg" alt="">
+        </div>
+        <div id="news">
+            <h2 class="new">Интернет</h2>
+            <h2 class="new">Друзья</h2>
+            <h2 class="new">Мероприятия</h2>
+        </div>
+        <div class="sectionTitle">
+            <h3>Нужна ли переработка?</h3>
+            <img src="recycle.svg" alt="">
+        </div>
+        <div id="recycle">
+            <div>
+                <img src="recycle.svg" alt="">
+                <!-- dssdsdsdds d s ds ds dssd sd dsds sd -->
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequatur quae consequuntur sit? Eius inventore enim illum consectetur doloremque velit provident aperiam quibusdam ullam eligendi fuga facere at, accusantium culpa.</p>
+        </div>
+        <div class="sectionTitle">
+            <h3>Давай беречь планету, пока не поздно!</h3>
+            <!-- <img src="recycle.svg" alt=""> -->
+        </div>
+        <img id="fire" src="fire.svg" alt="">
+    </main>
+    <script>
+        let bg = document.getElementById("bg");
+        let fire = document.getElementById("fire");
+        let ready = true;
+
+        fire.onclick = () => {
+            if (ready) {
+                bg.style.opacity = 1;
+                bg.style.filter = "none";
+                ready = false;
+            } else {
+                bg.style.opacity = 0.1;
+                bg.style.filter = "hue-rotate(210deg)";
+                ready = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
